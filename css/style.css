@@ -1,0 +1,37 @@
+nav {
+    list-style-type: none;
+    position: sticky;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+ }
+ #banner {
+    align-items: center;
+    background-image: url("/img/wpp.jpg");
+    padding: 6em 0 2em 0 ;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    margin-bottom: -3.25em;
+    max-height: 32em;
+    min-height: 22em;
+    position: relative;
+    top: -3.25em;
+}
+
+.tiles {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+img {
+    width: 20%;
+}
