@@ -1,113 +1,115 @@
 <!DOCTYPE HTML>
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="icon" href = "https://cdn4.iconfinder.com/data/icons/casino-general/512/Stack_of_Cards-512.png" type = "image/x-icon">
-		<title>Julia's Portfolio</title>
-	</head>
-	<body>
 
-		<!-- Sticky navbar -->
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-			<a class="navbar-brand" href="index.html">Home</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			  <span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
-			  <ul class="navbar-nav">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="icon" href="/img/logo.png" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Julia's Portfolio</title>
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+
+		<a class="navbar-brand" href="index.html">
+			<img src="/img/logo.png" width="50" height="50">
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+			aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
 				<li class="nav-item">
-				  <a class="nav-link" href="#banner">About me </a>
+					<a class="nav-link" href="#banner">Home</a>
 				</li>
 				<li class="nav-item">
-				  <a class="nav-link" href= "#projects" >Projects</a>
+					<a class="nav-link" href="#projects">Projects</a>
 				</li>
 				<li class="nav-item">
-				  <a class="nav-link" href="#contact">Contact</a>
+					<a class="nav-link" href="#contact">Contact</a>
 				</li>
-			  </ul>
-			</div>
-		  </nav>
+			</ul>
+		</div>
+	</nav>
 
-				<!-- Banner -->
-					<section id="banner" class="major">
-						<div class="inner">
-							<header class="major">
-								<h1>Hi, my name is Julia</h1>
-							</header>
-							<div class="content">
-								<p>This is my portfolio!<br />
-								Still in progress tho</p>
-							</div>
-						</div>
-					</section>
+	<!-- Hero -->
+	<section id="banner">
+		<div class="hero-text">
+			<h1 style="font-size:50px">I am Julia Wiebbelling</h1>
+			<p>and I'm a Programmer</p>
+			<button class="button" onClick="document.getElementById('contact').scrollIntoView();">Check my
+				projects</button>
+		</div>
+	</section>
+	<div class="row" id="projects">
+		<div class="column">
+			<img src="/icons/3d-icon.png" alt="Beautiful project" />
+			<h3><a href="/playground.html" class="link">Playground 3D</a></h3>
+			<p>Made entirely with Unity.</p>
+		</div>
+		<div class="column">
+			<img src="/icons/pw-icon.png" alt="Second project" />
+			<header class="major">
+				<h3><a href="/projectw.html" class="link">Project.W</a></h3>
+				<p>2D Platformer (my first game!)</p>
+		</div>
+		<div class="column">
+			<img src="/icons/canastra-icon.png" alt="Canastra logo" />
+			<h3><a href="canastra.html" class="link">Canastra Score</a></h3>
+			<p>Meet Pontos da Canastra, your new score counter website to play canastra without worries</p>
+		</div>
+	</div>
 
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Projects-->
-							<section id="projects" class="tiles">
-								<article>
-									<span class="img">
-										<img src="/icons/3d-icon.png" alt="Beautiful project" />
-									</span>
-									<header class="major">
-										<h3><a href="/playground.html" class="link">Playground 3D</a></h3>
-										<p>Made entirely with Unity.</p>
-									</header>
-								</article>
-								<article>
-									<span class="img">
-										<img src="/icons/pw-icon.png" alt="Second project" />
-									</span>
-									<header class="major">
-										<h3><a href="/projectw.html" class="link">Project.W</a></h3>
-										<p>2D Platformer (my first game!)</p>
-									</header>
-								</article>
-								<article>
-									<span  class="rounded float-end">
-										<img src="/icons/canastra-icon.png" alt="Canastra logo" />
-									</span>
-									<header class="Canastra">
-										<h3><a href="canastra.html" class="link">Canastra Score</a></h3>
-										<p>Meet Pontos da Canastra, your new score counter website to play canastra without worries</p>
-									</header>
-								</article>
-							</section>
-
-						<!-- Extra info -->
-								<div class="inner">
-									<header class="major">
-										<h2>A bit more about me</h2>
-									</header>
-									<p>This is a very nice text about me </p>
-									<a class="button" href= "https://github.com/jwiebbelling">Check my GitHub!</a>
-								</div>
-					</div>
+	<!-- Projects check https://www.w3schools.com/css/tryit.asp?filename=trycss_ex_images_card-->
 
 
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<ul class="icons">
-								<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-							</ul>
-							<ul class="copyright">
-							</ul>
-						</div>
-					</footer>
-			</div>
-			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-			<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	</body>
+	<!-- About me text -->
+	<div class="container border border-dark rounded" id="contact">
+		<img class="sticky" src="/img/me.png">
+		<h2>A bit more about me</h2>
+		<p>Games have been an inspiration for me since I was a little kid. The nostalgia hits hard just by thinking
+			about those days playing Mario Kart on the Wii or remembering spending the whole afternoon just making
+			lots
+			of funny Mii's (those funky Wii characters). Another huge game memory that I have is playing Club
+			Penguin
+			all day with my friends. Ah, those were good times!
+			<br>
+			That being said, my main aspiration is to create good stuff and provide good service. Make games that
+			people
+			will enjoy and later feel lots of nostalgia when thinking about it, just like me!
+			<br>
+			What makes me stand out is that I adapt quickly and learn whatever it takes to make the product the best
+			there is. My skills: C#, HTML and CSS. I am currently learning JavaScript and I have a bit of knowledge
+			about PhP.
+		</p>
+	</div>
+
+	<div class="middle">
+		<a href="https://www.linkedin.com/in/julia-wiebbelling-0ba39b1b3/" class="fa fa-linkedin"></a>
+		<a href="https://www.facebook.com/julia.wiebbelling/" class="fa fa-facebook"></a>
+		<a href="https://github.com/jwiebbelling" class="fa fa-github"></a>
+		<a href="https://www.instagram.com/julia_wiebbelling/" class="fa fa-instagram"></a>
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+</body>
+
 </html>
