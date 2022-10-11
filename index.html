@@ -3,93 +3,122 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css" />
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link rel="icon" href="/img/logo.png" type="image/x-icon">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>Julia's Portfolio</title>
+
 </head>
 
 <body>
-
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-
-		<a class="navbar-brand" href="index.html">
-			<img src="/img/logo.png" width="50" height="50">
-		</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-			aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarNav">
-			<ul class="navbar-nav">
-				<li class="nav-item">
-					<a class="nav-link" href="#banner">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#projects">Projects</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#contact">Contact</a>
-				</li>
-			</ul>
+	<div class="row grey">
+		<div class="col-1"></div>
+		<div class="col-10">
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" style="font-size: 20px;">
+				<a class="navbar-brand" href="index.html">
+					<img src="/img/logo.png" width="auto" height="55">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="#banner">Home</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+								aria-haspopup="true" aria-expanded="false">
+								Projects
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="/playground.html">3D Playground</a>
+								<a class="dropdown-item" href="/projectw.html">Project.W</a>
+								<a class="dropdown-item" href="/canastra.html">Canastra</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#projects">Jump to projects</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contact">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
 		</div>
-	</nav>
-
+	</div>
 	<!-- Hero -->
 	<section id="banner">
 		<div class="hero-text">
 			<h1 style="font-size:50px">I am Julia Wiebbelling</h1>
 			<p>and I'm a Programmer</p>
-			<button class="button" onClick="document.getElementById('contact').scrollIntoView();">Check my
+			<button class="button" onClick="document.getElementById('projects').scrollIntoView();">Check my
 				projects</button>
 		</div>
 	</section>
-	<div class="row" id="projects">
+	<div class="row center-screen" id="projects">
 		<div class="column">
-			<img src="/icons/3d-icon.png" alt="Beautiful project" />
-			<h3><a href="/playground.html" class="link">Playground 3D</a></h3>
-			<p>Made entirely with Unity.</p>
+			<div class="card" style="width: 20rem;">
+				<img src="/icons/3d-icon.png" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Playground 3D</h5>
+					<p class="card-text">A 3D game made entirely with Unity.</p>
+				</div>
+			</div>
 		</div>
 		<div class="column">
-			<img src="/icons/pw-icon.png" alt="Second project" />
-			<header class="major">
-				<h3><a href="/projectw.html" class="link">Project.W</a></h3>
-				<p>2D Platformer (my first game!)</p>
+			<div class="card" style="width: 20rem;">
+				<img src="/icons/pw-icon.png" class="card-img-top" alt="Second project">
+				<div class="card-body">
+					<h5 class="card-title">Project.W</h5>
+					<p class="card-text">2D Platformer (my first game!)</p>
+				</div>
+			</div>
 		</div>
 		<div class="column">
-			<img src="/icons/canastra-icon.png" alt="Canastra logo" />
-			<h3><a href="canastra.html" class="link">Canastra Score</a></h3>
-			<p>Meet Pontos da Canastra, your new score counter website to play canastra without worries</p>
+			<div class="card" style="width: 20rem;">
+				<img src="/icons/canastra-icon.png" class="card-img-top" alt="Canastra">
+				<div class="card-body">
+					<h5 class="card-title">Canastra Score</h5>
+					<p class="card-text">A score counter website.</p>
+				</div>
+			</div>
+		</div>
+		<div class="column">
+			<div class="card" style="width: 20rem;">
+				<img src="/icons/comingsoon.png" class="card-img-top" alt="Canastra">
+				<div class="card-body">
+					<h5 class="card-title">Website</h5>
+					<p class="card-text">Coming soon!</p>
+				</div>
+			</div>
 		</div>
 	</div>
-
-	<!-- Projects check https://www.w3schools.com/css/tryit.asp?filename=trycss_ex_images_card-->
-
 
 	<!-- About me text -->
 	<div class="container border border-dark rounded" id="contact">
 		<img class="sticky" src="/img/me.png">
-		<h2>A bit more about me</h2>
+		<h2>More about me</h2>
 		<p>Games have been an inspiration for me since I was a little kid. The nostalgia hits hard just by thinking
 			about those days playing Mario Kart on the Wii or remembering spending the whole afternoon just making
 			lots
 			of funny Mii's (those funky Wii characters). Another huge game memory that I have is playing Club
 			Penguin
-			all day with my friends. Ah, those were good times!
+			all day with my friends. <i>Ah, those were good times!</i>
 			<br>
 			That being said, my main aspiration is to create good stuff and provide good service. Make games that
 			people
-			will enjoy and later feel lots of nostalgia when thinking about it, just like me!
+			will <i>enjoy</i> and later feel lots of <i>nostalgia</i> when thinking about it, just like me!
 			<br>
 			What makes me stand out is that I adapt quickly and learn whatever it takes to make the product the best
-			there is. My skills: C#, HTML and CSS. I am currently learning JavaScript and I have a bit of knowledge
-			about PhP.
+			there is.<br>
+			<u>My skills</u>: C#, HTML and CSS. I am currently learning JavaScript and I have a bit of knowledge
+			of PhP.
 		</p>
 	</div>
 
@@ -99,7 +128,6 @@
 		<a href="https://github.com/jwiebbelling" class="fa fa-github"></a>
 		<a href="https://www.instagram.com/julia_wiebbelling/" class="fa fa-instagram"></a>
 	</div>
-
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
