@@ -26,8 +26,9 @@ html {
 }
 
 button:hover {
-  background-color: #555;
+  background-color:#C9E0E0;
   color: white;
+  transition: 0.7s;
 }
 
 .center-screen {
@@ -58,8 +59,8 @@ button:hover {
   text-align: center;
   width: 22%;
   padding-bottom: 2cm;
-
 }
+
 .spacetop{
   padding-top: 2cm;
 }
@@ -85,7 +86,9 @@ img {
   background: #dd4b39;
   color: white;
 }
-
+li.pointer {
+  cursor: pointer;
+}
 .fa-facebook {
   background: #3B5998;
   color: white;
@@ -121,7 +124,17 @@ img {
   width: 20%;
 }
 
+.start{
+  padding: 12px;
+}
+
 .middle {
   text-align: center;
   padding: 10px;
+}
+
+.btn-test {
+  color: black;
+  background-color: #ecf4f4;
+  border-radius: .5rem;
 }
