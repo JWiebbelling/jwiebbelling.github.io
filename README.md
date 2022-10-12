@@ -1,14 +1,16 @@
 # My portfolio 🚀
-## Some of my projects and about me
 
 
 ## Projects:
 
-⚡️ 3D Playground
+⚡️ 3D Playground 
+
 ⚡️ Project.W
+
 ⚡️ Pontos da Canastra
+
 ⚡️ Pepsi Website
 
-⚡️ Coming soon...
+⚡️ A lot more coming soon...
 
 Check it out: **[Portfolio](jwiebbelling.github.io)**
