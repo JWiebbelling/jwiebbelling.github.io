@@ -13,4 +13,4 @@
 
 ⚡️ A lot more coming soon...
 
-Check it out: **[Portfolio](jwiebbelling.github.io)**
+Check it out: https://jwiebbelling.github.io/
