@@ -1,119 +1,161 @@
-.about{
-font-size: 20px;
+.about {
+  font-size: 1.25rem;
 }
+
 #banner {
-  padding: 6em 0 5em 0;
+  padding: 6em 0;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  height: 75vh;
-  margin-bottom: 5em;
+  height: auto; 
   max-height: 50em;
   min-height: 22em;
   position: relative;
 }
-#banner p, h1{
+
+#banner p, h1 {
   color: whitesmoke;
   text-shadow: 2px 1px 2px rgb(37, 4, 70);
 }
+
 .bg {
-  animation:slide 3s ease-in-out infinite alternate;
+  animation: slide 3s ease-in-out infinite alternate;
   background-image: linear-gradient(-60deg, rgb(14, 24, 134) 50%, rgb(129, 15, 129) 50%);
-  bottom:0;
-  left:-50%;
-  opacity:.5;
-  position:fixed;
-  right:-50%;
-  top:0;
-  z-index:-1;
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
 }
+
 .bg2 {
-  animation-direction:alternate-reverse;
-  animation-duration:4s;
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
 }
+
 .bg3 {
-  animation-duration:5s;
+  animation-duration: 5s;
 }
+
 body {
   overflow-x: hidden;
 }
+
 button:hover {
   background-color: #C9E0E0;
   color: white;
   transition: 0.7s;
 }
-.card:hover{
-  cursor:pointer;
+
+.card:hover {
+  cursor: pointer;
 }
+
 .center-screen {
   display: flex;
+  flex-direction: column; 
   justify-content: center;
   align-items: center;
   text-align: center;
 }
+
 .column {
   padding-bottom: 1%;
   padding-left: 2%;
+  flex: 1;
 }
+
 .grey {
   background-color: #343a40;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 img {
-  width: 80%;
+  max-width: 100%; 
+  height: auto; 
 }
+
 li.pointer {
   cursor: pointer;
 }
+
 .middle {
   text-align: center;
   padding: 10px;
 }
+
 .projects {
-padding: 1%;
+  padding: 1%;
 }
+
 .secondary {
-  float: left;
+  float: left; 
   padding: 0 20px 0 0;
-  width: 270px;
+  width: 100%; 
 }
+
 .start {
   padding: 12px;
 }
+
 .sticky {
   position: sticky;
   float: left;
   padding: 10px;
   width: auto;
 }
-#spotlight{
-  background-color:black;
+
+#spotlight {
+  background-color: black;
   padding: 1%;
   text-align: center;
 }
+
 svg {
   margin: 0.4em;
   overflow: visible;
   color: black;
 }
+
 @keyframes slide {
   0% {
-    transform:translateX(-25%);
+    transform: translateX(-25%);
   }
   100% {
-    transform:translateX(25%);
+    transform: translateX(25%);
   }
 }
+
 @media screen and (max-width: 65rem) {
   #banner {
-    height: 100vh;
-    max-height: 120em;
+    height: auto; 
+    max-height: 120em; 
     min-height: 22em;
   }
-  .sticky{
+  
+  .sticky {
     position: sticky;
     align-self: center;
- }
+  }
+}
+
+@media screen and (max-width: 40rem) {
+  .about {
+    font-size: 1rem;
+  }
+
+  .secondary {
+    width: 100%;
+    float: none;
+    padding: 0;
+  }
+
+  #banner {
+    padding: 3em 0; 
+  }
 }
