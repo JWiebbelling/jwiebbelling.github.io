@@ -119,6 +119,11 @@ svg {
   overflow: visible;
   color: black;
 }
+video {
+  width: 100%;
+  height: auto;
+  max-width: 720px; 
+}
 
 @keyframes slide {
   0% {
@@ -146,7 +151,9 @@ svg {
   .about {
     font-size: 1rem;
   }
-
+  .center-screen {
+    flex-direction: column;
+  }
   .secondary {
     width: 100%;
     float: none;
